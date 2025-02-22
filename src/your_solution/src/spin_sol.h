@@ -26,6 +26,9 @@ class SpinSolution : public rclcpp::Node {
 
     ArrayMsg latest_pos;
     ArrayMsg latest_vel;
+    ArrayMsg predictedpos;
+    ArrayMsg prevpos;
+    size_t count_;
 };
 
 #endif //YOUR_SOLUTION_SRC_SPIN_SOL_H_
